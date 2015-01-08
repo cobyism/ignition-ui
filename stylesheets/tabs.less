@@ -1,7 +1,7 @@
 @import "ui-variables";
 @tab-radius: 3px;
 @modified-icon-width: 8px;
-@tab-skew: 30deg;
+@tab-skew: 38deg;
 @tab-top-padding: 5px;
 @tab-bottom-border-height: 5px;
 @tab-border: 1px solid @tab-border-color;
@@ -10,9 +10,8 @@
 
 .tab-bar {
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
-  background: @tab-bar-background-color;
-  box-shadow: inset 0 -8px 8px -4px rgba(0,0,0, .15);
-  padding: 0 10px 0 25px;
+  background: @app-background-color;
+  padding: 0 10px 0 45px;
   overflow-x: auto;
   overflow-y: hidden;
 
@@ -31,6 +30,7 @@
     border-top: 1px solid @tab-border-color;
     border-bottom: 1px solid @tab-bar-bottom-border-color;
     pointer-events: none;
+    border-radius: 3px 3px 0 0;
   }
 
   .tab {
@@ -108,7 +108,7 @@
   .tab.active {
     z-index: 1;
     color: @text-color-highlight;
-    box-shadow: inset -1px 1px 0 @tab-border-color, 4px -4px 4px rgba(0,0,0,.1);
+    box-shadow: inset -1px 1px 0 @tab-border-color;//, 4px -4px 4px rgba(0,0,0,.1);
 
     .close-icon {
       line-height: @tab-height - 1px;

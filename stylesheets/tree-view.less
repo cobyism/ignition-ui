@@ -2,11 +2,22 @@
 
 .tree-view {
   font-size: @font-size;
-  background: @tree-view-background-color;
+  background: @app-background-color;;
+  padding: 36px 16px 16px;
 
   .selected:before {
   	background: #444;
-    box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+    border-radius: 3px 0 0 3px;
+    left: 16px;
+    right: 0;
+  }
+}
+
+[data-show-on-right-side=true] {
+  .tree-view .selected:before {
+    border-radius: 0 3px 3px 0;
+    left: 0;
+    right: 16px;
   }
 }
 
@@ -18,11 +29,11 @@
 
 .focusable-panel {
   opacity: 1;
-  background: #303030;
-  box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+  // background: #303030;
+  // box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
 
   &:focus {
-    background: #282828;
+    // background: #282828;
 
     .selected:before {
       background: @background-color-selected;
