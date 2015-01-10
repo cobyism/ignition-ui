@@ -1,7 +1,7 @@
 {
   "name": "ignition-ui",
   "theme": "ui",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "description": "Ignition in three… two… one… (hit the button!)",
   "license": "MIT",
   "repository": "https://github.com/cobyism/ignition-ui",
